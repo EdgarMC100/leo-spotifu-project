@@ -96,7 +96,7 @@
 .icon-search:before {
   content: "\e914";
 }
-.icon-Vector:before {
+.icon-vector:before {
   content: "\e915";
 }
 .icon-volumeDown:before {
@@ -107,8 +107,4 @@
 }
 .icon-volumeUp:before {
   content: "\e918";
-}
-
-i.icon-home{
-  color: black;
 }

@@ -4,6 +4,8 @@
 @import './link.css';
 @import './button-icon.css';
 @import './logo.css';
+@import './list.css';
+@import './menu.css';
 
 :root{
   --primary: #00B050;
@@ -24,3 +26,9 @@
   --small: normal: .75em/normal var(--basefontFamily);
 }
 
+@media screen and (min-width: 768px) {
+  html{
+    /* font-size: 24px; */
+  }
+
+}
