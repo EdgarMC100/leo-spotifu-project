@@ -1,0 +1,17 @@
+.player{
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  background-color: var(--gray40);
+}
+
+.player-control{
+  border: none;
+  font-size: 1.5rem;
+  padding: .5rem;
+  background: none;
+  color: var(--gray10);
+  cursor: pointer;
+  /* border: 1px solid red; */
+  padding-top: 0.8rem;
+}
