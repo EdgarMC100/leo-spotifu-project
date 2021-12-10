@@ -4,6 +4,8 @@
   flex-wrap: wrap;
   gap: .25rem;
   flex: 1;
+  max-inline-size: 592px;
+  justify-content: center;
 }
 
 .playerControls-buttons{

@@ -75,41 +75,71 @@
     </nav>
   </div>
   <div class="player">
-    <div class="playerControls">
-      <div class="playerControls-buttons" aria-label="Controles de reproducción">
-        <button class="buttonIcon" aria-label="Previous" title="Previous">
-          <i aria-hidden="true" class="icon-prev"></i>
-        </button>
-        <button class="buttonIcon is-white" aria-label="Play" title="Play">
-          <i aria-hidden="true" class="icon-play"></i>
-        </button>
-        <button class="buttonIcon" aria-label="Next" title="Next">
-          <i aria-hidden="true" class="icon-next"></i>
-        </button>
+    <div class="player-nowPlaying">
+      <div class="nowPlaying">
+        <img src="./images/MiniCover3x.png" width="56" height="56"
+          alt="Portada de la cancion Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura"
+          title="Portada de la cancion Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
+        <div class="nowPlaying-details">
+          <div class="nowPlaying-description">
+            <a href="#song" class="nowPlaying-title">
+              Grand Escape (feat. Tokio Miura)
+            </a>
+            <a href="#artist" class="nowPlaying-artist">
+              RADWMPS, Toko Miura
+            </a>
+          </div>
+          <div class="nowPlaying-actions">
+            <button class="player-control" role="switch" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
+              <i class="icon-heart" aria-hidden="true"></i>
+              <!-- <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i> -->
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="playerPlayback">
-        <span class="playerPlayback-progressTime">0:47</span>
-        <div class="playerPlayback-slider">
+
+
+      <!-- <p><span style="font: var(--baseFontBold); color: var(--white);">Escape (feat. Tokio Miura) de</span><br><span style="font: var(--small);">RADWIMPS, Toko Miura</span></p>
+      <i class="icon-heart"></i> -->
+    </div>
+    <div class="player-playerControls">
+      <div class="playerControls">
+        <div class="playerControls-buttons" aria-label="Controles de reproducción">
+          <button class="buttonIcon" aria-label="Previous" title="Previous">
+            <i aria-hidden="true" class="icon-prev"></i>
+          </button>
+          <button class="buttonIcon is-white" aria-label="Play" title="Play">
+            <i aria-hidden="true" class="icon-play"></i>
+          </button>
+          <button class="buttonIcon" aria-label="Next" title="Next">
+            <i aria-hidden="true" class="icon-next"></i>
+          </button>
+        </div>
+        <div class="playerPlayback">
+          <span class="playerPlayback-progressTime">0:47</span>
+          <div class="playerPlayback-slider">
+            <div class="slider">
+              <div class="slider-progress">
+                <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
+                </button>
+              </div>
+            </div>
+          </div>
+          <span class="playerPlayback-progressTime">3:00</span>
+        </div>
+      </div>
+    </div>
+    <div class="player-playerVolume">
+      <div class="playerVolume">
+        <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+          <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i>
+        </button>
+        <div class="playerVolume-slider">
           <div class="slider">
             <div class="slider-progress">
               <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
               </button>
             </div>
-          </div>
-        </div>
-        <span class="playerPlayback-progressTime">3:00</span>
-
-      </div>
-    </div>
-    <div class="playerVolume">
-      <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
-        <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i>
-      </button>
-      <div class="playerVolume-slider">
-        <div class="slider">
-          <div class="slider-progress">
-            <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
-            </button>
           </div>
         </div>
       </div>

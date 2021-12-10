@@ -1,0 +1,39 @@
+.nowPlaying{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  /* width: 321px; */
+}
+
+.nowPlaying-cover img{
+  inline-size: 3.5rem;
+  block-size: 3.5rem;
+}
+
+.nowPlaying .nowPlaying-details{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nowPlaying-description{
+  min-inline-size: 217px;
+}
+.nowPlaying-description a{
+  text-decoration: none;
+}
+
+.nowPlaying-description .nowPlaying-title{
+  color: var(--white);
+  font: var(--baseFontBold);
+  display: block;
+}
+
+.nowPlaying-description .nowPlaying-artist{
+  color: var(--gray10);
+  font: var(--small);
+}
+
+.nowPlaying .icon-heart{
+  color: var(--primary);
+}

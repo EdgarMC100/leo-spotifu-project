@@ -4,11 +4,7 @@
 @import './link.css';
 @import './button-icon.css';
 @import './sidebar.css';
-@import './slider.css';
-@import './player-controls.css';
-@import './player-playback.css';
 @import './player.css';
-@import './player-volume.css';
 
 :root{
   --primary: #00B050;
