@@ -1,0 +1,21 @@
+@import './navigation.css';
+@import './search.css';
+
+.header{
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  backdrop-filter: blur(5px);
+}
+
+@supports not(backdrop-filter: blur(5px)){
+  .header{
+    background:var(--gray50);
+  }
+
+  /* .header:first-child{
+    border: 1px solid red;
+  } */
+}

@@ -8,155 +8,744 @@
   <title>Spotifu</title>
 </head>
 <body class="body">
-  <div class="sidebar">
-    <header class="logo" role="banner">
-      <a href="/">
-        <img class="logo-image" src="./images/spotifu-logo.png" alt="Logo de spotify" width="112px" height="32px">
-      </a>
-    </header>
-    <nav class="menu" aria-label="Principal">
-      <ul class="menu-list">
-        <li class="menuItem is-active">
-          <a href="/" aria-current="page" class="link">
-            <i class="icon-home" aria-hidden="true"></i>
-            <span>Inicio</span>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a class="link">
-            <i class="icon-search" aria-hidden="true"></i>
-            <span>Buscar</span>
-          </a>
-        </li>
-        <li class="menuItem">
-          <a class="link">
-            <i class="icon-creditCard" aria-hidden="true"></i>
-            <span>Premium</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="list" aria-labelledby="library-navigation">
-      <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
-      <ul class="list-content">
-        <li class="list-item">
-          <a href="" class="link">Creada para ti</a>
-        </li>
-        <li class="list-item">
-          <a href="" class="link">Escuchado recientemente</a>
-        </li>
-        <li class="list-item">
-          <a href="" class="link">Tus me gusta</a>
-        </li>
-      </ul>
-    </nav>
+  <div class="layout">
+    <div class="layout-block">
+      <div class="layout-sidebar">
+        <div class="sidebar">
+          <header class="logo" role="banner">
+            <a href="/">
+              <img class="logo-image" src="./images/spotifu-logo.png" alt="Logo de spotify" width="112px" height="32px">
+            </a>
+          </header>
+          <nav class="menu" aria-label="Principal">
+            <ul class="menu-list">
+              <li class="menuItem is-active">
+                <a href="/" aria-current="page" class="link">
+                  <i class="icon-home" aria-hidden="true"></i>
+                  <span>Inicio</span>
+                </a>
+              </li>
+              <li class="menuItem">
+                <a class="link">
+                  <i class="icon-search" aria-hidden="true"></i>
+                  <span>Buscar</span>
+                </a>
+              </li>
+              <li class="menuItem">
+                <a class="link">
+                  <i class="icon-creditCard" aria-hidden="true"></i>
+                  <span>Premium</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="list" aria-labelledby="library-navigation">
+            <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+            <ul class="list-content">
+              <li class="list-item">
+                <a href="" class="link">Creada para ti</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Escuchado recientemente</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Tus me gusta</a>
+              </li>
+            </ul>
+          </nav>
 
-    <nav class="list" aria-labelledby="playlist-navigation">
-      <h2 class="list-title" id="playlist-navigation">Playlist</h2>
-      <ul class="list-content">
-        <li class="list-item">
-          <a href="" class="link">Lo mejor de lo mejor</a>
-        </li>
-        <li class="list-item">
-          <a href="" class="link">Naruto al 100% para programar</a>
-        </li>
-        <li class="list-item">
-          <span class="ellipsis">
-            <a href="" class="link">Para cantar en la ducha sin preocupaciones de que se detenga tu cancion favorita</a>
-          </span>
-        </li>
-        <li class="list-item">
-          <a href="" class="link">Sin parar</a>
-        </li>
-        <li class="list-item">
-          <a href="" class="link">Naruto openings</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <div class="player">
-    <div class="player-nowPlaying">
-      <div class="nowPlaying">
-        <img src="./images/MiniCover3x.png" width="56" height="56"
-          alt="Portada de la cancion Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura"
-          title="Portada de la cancion Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
-        <div class="nowPlaying-details">
-          <div class="nowPlaying-description">
-            <a href="#song" class="nowPlaying-title">
-              Grand Escape (feat. Tokio Miura)
-            </a>
-            <a href="#artist" class="nowPlaying-artist">
-              RADWMPS, Toko Miura
-            </a>
-          </div>
-          <div class="nowPlaying-actions">
-            <button class="player-control" role="switch" aria-label="Guardar en tu biblioteca" title="Guardar en tu biblioteca">
-              <i class="icon-heart" aria-hidden="true"></i>
-              <!-- <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i> -->
-            </button>
-          </div>
+          <nav class="list" aria-labelledby="playlist-navigation">
+            <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+            <ul class="list-content">
+              <li class="list-item">
+                <a href="" class="link">Lo mejor de lo mejor</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto al 100% para programar</a>
+              </li>
+              <li class="list-item">
+                <span class="ellipsis">
+                  <a href="" class="link">Para cantar en la ducha sin preocupaciones de que se detenga tu cancion favorita</a>
+                </span>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Sin parar</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto openings</a>
+              </li>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Sin parar</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto openings</a>
+              </li>
+              </li>
+              <!-- <li class="list-item">
+                <a href="" class="link">Sin parar</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto openings</a>
+              </li>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Sin parar</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto openings</a>
+              </li>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Sin parar</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto openings</a>
+              </li></li>
+              <li class="list-item">
+                <a href="" class="link">Sin parar</a>
+              </li>
+              <li class="list-item">
+                <a href="" class="link">Naruto openings</a>
+              </li> -->
+
+            </ul>
+          </nav>
         </div>
       </div>
+      <div class="layout-main">
+        <div class="page">
+          <div class="sticky">
+            <div class="page-block">
+              <header class="header" aria-label="Barra superior y menú del usuario ">
+                <div class="navigation">
+                  <button aria-label="Volver" class="navigation-prev" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button disabled aria-label="Avanzar" class="navigation-next" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+                <form action="" class="search" role="search" aria-label="Buscar por artistas, canciones o podcast">
+                  <i aria-hidden="true" class="icon-search"></i>
+                  <input type="search" placeholder="Artistas, canciones, o podcasts">
+                </form>
+              </header>
+            </div>
+          </div>
 
+          <main class="page-block">
+            <section class="playlistList" aria-labelledby="region1">
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region1">
+                  Buenas noches
+                </h2>
+                <div class="navigation">
+                  <button aria-label="Volver" class="navigation-prev" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button disabled aria-label="Avanzar" class="navigation-next" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="playlistList-container">
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/liked.png" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <span class="ellipsis">
+                      <h3 class="playlistB-title">Like songs sjakjdklasjklvcmnklashoschpkasnlcn</h3>
+                    </span>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/liked.png" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <span class="ellipsis">
+                      <h3 class="playlistB-title">Liked songs that you listeningddddd every day</h3>
+                    </span>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/fh.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Monorepos</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/strange.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Streancy</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/luismi.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Luis Miguel</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/musica-whithout-cr.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <span class="ellipsis">
+                      <h3 class="playlistB-title">Excelente musica libre para susstreams </h3>
+                    </span>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/english.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">¡Tu inglés!</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/sorry-baby.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">Lo siento BB</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="playlistB">
+                  <div class="playlistB-cover">
+                    <img src="./images/leo.jpeg" width="76" height="76" alt="Cover de la playlist anime hits">
+                  </div>
+                  <div class="playlistB-details">
+                    <h3 class="playlistB-title">¿Por que se debe hacer testing en ANGULAR?...</h3>
+                    <div class="playlistB-control">
+                      <button class="buttonIcon is-primary" title="Reproducr la lista de reproduccion Naruto Openings & Endings"
+                        aria-label="Reproducr la lista de reproduccion Naruto Openings & Endings">
+                        <i class="icon-play" aria-hidden="true"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="playlistList" aria-labelledby="region2">
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region2">
+                  Escuchado recientemente
+                </h2>
+                <div class="navigation">
+                  <button aria-label="Volver" class="navigation-prev" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button disabled aria-label="Avanzar" class="navigation-next" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="playlistList-container">
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/me.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dicover Weekly</h3>
+                  <h4 class="playlistA-description">Cartoon, Futuristik, Mikk Mae</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/chill-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Chill Mix</h3>
+                  <h4 class="playlistA-description">Whethan, Cartoon, deadmau5 and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/romatic-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Romantic Mix</h3>
+                  <h4 class="playlistA-description">Nicho Hinojosa, Pablo Milanes etc</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/zedd.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Zedd mix</h3>
+                  <h4 class="playlistA-description">Madeon, Dilon Francis, Bebe Rexha and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/house-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">House Mix</h3>
+                  <h4 class="playlistA-description">Michael Calfan, Harrison, Topic and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/dance-electronic.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dance/Electronic Mix</h3>
+                  <h4 class="playlistA-description">Aloc, Galantis, Zedd and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-drive.jpg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Drive</h3>
+                  <h4 class="playlistA-description">A mix of news and music made for you</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix1.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 1</h3>
+                  <h4 class="playlistA-description">NOPS, The Wanted, Lana Del Rey and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix2.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 2</h3>
+                  <h4 class="playlistA-description">Unlike Pluto, The Wanted, Lana del Rey and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix3.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 3</h3>
+                  <h4 class="playlistA-description">Nicho Hinojosa Robert Firth, Luis Miguel and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix4.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 4</h3>
+                  <h4 class="playlistA-description">Mome, Madism, Naxsy and more</h4>
+                </div>
+              </div>
+            </section>
+            <section class="playlistList" aria-labelledby="region3">
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region3">
+                  Lo mejor de lo mejor
+                </h2>
+                <div class="navigation">
+                  <button aria-label="Volver" class="navigation-prev" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button disabled aria-label="Avanzar" class="navigation-next" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="playlistList-container">
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/me.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dicover Weekly</h3>
+                  <h4 class="playlistA-description">Cartoon, Futuristik, Mikk Mae</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/chill-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Chill Mix</h3>
+                  <h4 class="playlistA-description">Whethan, Cartoon, deadmau5 and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/romatic-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Romantic Mix</h3>
+                  <h4 class="playlistA-description">Nicho Hinojosa, Pablo Milanes etc</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/zedd.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Zedd mix</h3>
+                  <h4 class="playlistA-description">Madeon, Dilon Francis, Bebe Rexha and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/house-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">House Mix</h3>
+                  <h4 class="playlistA-description">Michael Calfan, Harrison, Topic and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/dance-electronic.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dance/Electronic Mix</h3>
+                  <h4 class="playlistA-description">Aloc, Galantis, Zedd and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-drive.jpg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Drive</h3>
+                  <h4 class="playlistA-description">A mix of news and music made for you</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix1.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 1</h3>
+                  <h4 class="playlistA-description">NOPS, The Wanted, Lana Del Rey and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix2.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 2</h3>
+                  <h4 class="playlistA-description">Unlike Pluto, The Wanted, Lana del Rey and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix3.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 3</h3>
+                  <h4 class="playlistA-description">Nicho Hinojosa Robert Firth, Luis Miguel and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix4.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 4</h3>
+                  <h4 class="playlistA-description">Mome, Madism, Naxsy and more</h4>
+                </div>
 
-      <!-- <p><span style="font: var(--baseFontBold); color: var(--white);">Escape (feat. Tokio Miura) de</span><br><span style="font: var(--small);">RADWIMPS, Toko Miura</span></p>
-      <i class="icon-heart"></i> -->
-    </div>
-    <div class="player-playerControls">
-      <div class="playerControls">
-        <div class="playerControls-buttons" aria-label="Controles de reproducción">
-          <button class="buttonIcon" aria-label="Previous" title="Previous">
-            <i aria-hidden="true" class="icon-prev"></i>
-          </button>
-          <button class="buttonIcon is-white" aria-label="Play" title="Play">
-            <i aria-hidden="true" class="icon-play"></i>
-          </button>
-          <button class="buttonIcon" aria-label="Next" title="Next">
-            <i aria-hidden="true" class="icon-next"></i>
-          </button>
+              </div>
+            </section>
+            <section class="playlistList" aria-labelledby="region4">
+              <div class="playlistList-top">
+                <h2 class="playlistList-title" id="region4">
+                  Podcasts
+                </h2>
+                <div class="navigation">
+                  <button aria-label="Volver" class="navigation-prev" title="Volver">
+                    <i class="icon-arrowLeft" aria-hidden="true"></i>
+                  </button>
+                  <button disabled aria-label="Avanzar" class="navigation-next" title="Avanzar">
+                    <i class="icon-arrowRight" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="playlistList-container">
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/me.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dicover Weekly</h3>
+                  <h4 class="playlistA-description">Cartoon, Futuristik, Mikk Mae</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/chill-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Chill Mix</h3>
+                  <h4 class="playlistA-description">Whethan, Cartoon, deadmau5 and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/romatic-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Romantic Mix</h3>
+                  <h4 class="playlistA-description">Nicho Hinojosa, Pablo Milanes etc</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/zedd.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Zedd mix</h3>
+                  <h4 class="playlistA-description">Madeon, Dilon Francis, Bebe Rexha and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/house-mix.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">House Mix</h3>
+                  <h4 class="playlistA-description">Michael Calfan, Harrison, Topic and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/dance-electronic.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Dance/Electronic Mix</h3>
+                  <h4 class="playlistA-description">Aloc, Galantis, Zedd and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-drive.jpg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Drive</h3>
+                  <h4 class="playlistA-description">A mix of news and music made for you</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix1.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 1</h3>
+                  <h4 class="playlistA-description">NOPS, The Wanted, Lana Del Rey and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix2.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 2</h3>
+                  <h4 class="playlistA-description">Unlike Pluto, The Wanted, Lana del Rey and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix3.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 3</h3>
+                  <h4 class="playlistA-description">Nicho Hinojosa Robert Firth, Luis Miguel and more</h4>
+                </div>
+                <div class="playlistA" alt="Portada dde la lista de reproduccion Anime Hits ">
+                  <div class="playlistA-cover">
+                    <img src="./images/daily-mix4.jpeg" width="150" height="150" alt="">
+                    <button class="buttonIcon is-primary" aira-label="Reproducir" title="Reproducir">
+                      <i class="icon-play" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <h3 class="playlistA-title">Daily Mix 4</h3>
+                  <h4 class="playlistA-description">Mome, Madism, Naxsy and more</h4>
+                </div>
+              </div>
+            </section>
+          </main>
         </div>
-        <div class="playerPlayback">
-          <span class="playerPlayback-progressTime">0:47</span>
-          <div class="playerPlayback-slider">
-            <div class="slider">
-              <div class="slider-progress">
-                <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
+      </div>
+    </div>
+    <div class="layout-block">
+      <footer class="layout-bottom">
+        <div class="player">
+          <div class="player-nowPlaying">
+            <div class="nowPlaying">
+              <img src="./images/MiniCover3x.png" width="56" height="56"
+                alt="Portada de la cancion Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura"
+                title="Portada de la cancion Grand Escape (feat. Tokio Miura) de RADWIMPS, Toko Miura">
+              <div class="nowPlaying-details">
+                <div class="nowPlaying-description">
+                  <a href="#song" class="nowPlaying-title">
+                    Grand Escape (feat. Tokio Miura)
+                  </a>
+                  <a href="#artist" class="nowPlaying-artist">
+                    RADWMPS, Toko Miura
+                  </a>
+                </div>
+                <div class="nowPlaying-actions">
+                  <button class="player-control" role="switch" aria-checked="false" aria-label="Guardar en tu biblioteca"
+                    label="Guardar en tu biblioteca">
+                    <i class="icon-heart" aria-hidden="true"></i>
+                    <!-- <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i> -->
+                  </button>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- <p><span style="font: var(--baseFontBold); color: var(--white);">Escape (feat. Tokio Miura) de</span><br><span style="font: var(--small);">RADWIMPS, Toko Miura</span></p>
+                    <i class="icon-heart"></i> -->
+          </div>
+          <div class="player-playerControls">
+            <div class="playerControls">
+              <div class="playerControls-buttons" aria-label="Controles de reproducción">
+                <button class="buttonIcon" aria-label="Previous" title="Previous">
+                  <i aria-hidden="true" class="icon-prev"></i>
                 </button>
+                <button class="buttonIcon is-white" aria-label="Play" title="Play">
+                  <i aria-hidden="true" class="icon-play"></i>
+                </button>
+                <button class="buttonIcon" aria-label="Next" title="Next">
+                  <i aria-hidden="true" class="icon-next"></i>
+                </button>
+              </div>
+              <div class="playerPlayback">
+                <span class="playerPlayback-progressTime">0:47</span>
+                <div class="playerPlayback-slider">
+                  <div class="slider">
+                    <div class="slider-progress">
+                      <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <span class="playerPlayback-progressTime">3:00</span>
               </div>
             </div>
           </div>
-          <span class="playerPlayback-progressTime">3:00</span>
-        </div>
-      </div>
-    </div>
-    <div class="player-playerVolume">
-      <div class="playerVolume">
-        <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
-          <i class="icon-volumeUp" id="volumen-icon" role="presentation" aria-label="Volumen alto"></i>
-        </button>
-        <div class="playerVolume-slider">
-          <div class="slider">
-            <div class="slider-progress">
-              <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
+          <div class="player-playerVolume">
+            <div class="playerVolume">
+              <button class="player-control" aria-label="Silenciar" aria-describedby="volumen-icon">
+                <i class="icon-volumeUp" id="volumen-icon" role="switch" aria-checked="false" aria-label="Volumen alto"></i>
               </button>
+              <div class="playerVolume-slider">
+                <div class="slider">
+                  <div class="slider-progress">
+                    <button class="slider-button" aria-label="Controlar el progreso de la reproduccion">
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </div>
-
-  <button class="buttonIcon is-white" aria-label="Play" title="Play">
-    <i aria-hidden="true" class="icon-play"></i>
-  </button>
-  <button class="buttonIcon is-primary" aria-label="Play" title="Play">
-    <i aria-hidden="true" class="icon-play"></i>
-  </button>
-  <a href="" class="link">Go to page</a>
-  <h1>This is an h1</h1>
-  <p>Avenir is the font-family</p>
-  <i class="icon-home"></i>
-  <i class="icon-homeActive"></i>
-
 </body>
 </html>
